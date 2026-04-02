@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 80vh;
     margin: 0;
     background: rgb(80 80 80);
     user-select: none;
