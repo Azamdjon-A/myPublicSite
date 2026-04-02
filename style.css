@@ -26,7 +26,6 @@ footer{
     flex-direction: column;
     gap: 10px;
     width: 90%;
-    max-width: 350px;
     padding: 10px;
     box-sizing: border-box; 
 }
