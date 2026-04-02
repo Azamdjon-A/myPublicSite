@@ -2,12 +2,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 80vh;
+    height: 100vh;
     margin: 0;
     background: rgb(80 80 80);
     user-select: none;
-    min-height: 100dvh;
     transition: var(--transition);
 }
 
