@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Калькулятор</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <span id="show"></span>
+            <div id="allButtons">
+                <div class="buttons">
+                    <button class="button" onclick="bt(this.innerText)">7</button>
+                    <button class="button" onclick="bt(this.innerText)">8</button>
+                    <button class="button" onclick="bt(this.innerText)">9</button>
+                    <button class="button" onclick="bt(this.innerText)">*</button>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="bt(this.innerText)">4</button>
+                    <button class="button" onclick="bt(this.innerText)">5</button>
+                    <button class="button" onclick="bt(this.innerText)">6</button>
+                    <button class="button" onclick="bt(this.innerText)">/</button>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="bt(this.innerText)">1</button>
+                    <button class="button" onclick="bt(this.innerText)">2</button>
+                    <button class="button" onclick="bt(this.innerText)">3</button>
+                    <button class="button" onclick="bt(this.innerText)">-</button>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="backspace()">&#9003</button>
+                    <button class="button" onclick="bt(this.innerText)">0</button>
+                    <button class="button" onclick="bt(this.innerText)">AC</button>
+                    <button class="button" onclick="bt(this.innerText)">+</button>
+                </div>
+                <div id="result">
+                    <button id="resultBT" onclick="result()">=</button> 
+                </div>
+            </div>
+        </div>
+        <footer>
+            <button id="themeBT" onclick="theme()">Сменить тему</button>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
