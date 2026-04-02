@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(80 80 80);
+    user-select: none;
+    min-height: 350px;
+    transition: background-color 3s ease;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+#main{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    min-width: 250px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+#show{
+    background: white;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding-right: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 2s ease, color 1s ease;
+}
+
+#result{
+    width: 100%;
+}
+
+#resultBT{
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+    background: white;
+    border-color: burlywood;
+    border-width: 3px;
+}
+
+#allButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.buttons{
+    display: flex;
+    gap: 5px;
+}
+
+.button{
+    width: 55px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    border-color: burlywood;
+    border-width: 3px;
+}
+
+#themeBT{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 25px;
+    background: white;
+    border-color: burlywood;
+    border-width: 3px;
+    transition: background-color 2s ease, color 1s ease;
+}
