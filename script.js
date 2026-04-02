@@ -9,16 +9,11 @@ let isWhiteTheme = true
 
 function theme(){
     if(isWhiteTheme){
-        display.style.background = 'lightgray';
-        display.style.color = 'black';
-        document.getElementById('themeBT').style.background = 'lightgray';
+        document.documentElement.style.setProperty('--background', 'lightgray')
         document.body.style.background = 'white';
     }
     else{
-        display.style.background = 'white';
-        display.style.color = 'black';
-        document.getElementById('themeBT').style.background = 'white'
-        document.getElementById('themeBT').style.color = 'black'
+        document.documentElement.style.setProperty('--background', 'white')
         document.body.style.background = 'rgb(80 80 80)';
     }
     isWhiteTheme = !isWhiteTheme;
@@ -65,10 +60,6 @@ function result(){
     if(text.length < 1) return // пустой ввод
 
     let exists = false
-    //text.split('').forEach(el => {
-    //    if(el === '*' || el === '/' || el === '+' || el === '-') 
-    //        {exists = true; return;}
-    //});
     for(let i=1; i<text.length; i++){
         if(operator.includes(text[i])) {exists = true; break;}
     }
@@ -118,7 +109,6 @@ function result(){
     text = textIndex[0].toString()
     showText()
     textIndex = []
-    
 }
 
 function showText(){

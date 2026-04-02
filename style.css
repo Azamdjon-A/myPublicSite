@@ -8,14 +8,23 @@ body{
     background: rgb(80 80 80);
     user-select: none;
     min-height: 100dvh;
-    transition: background-color 3s ease;
+    transition: var(--transition);
 }
 
 footer{
-    width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
+}
+
+:root{
+    --border-radius: 10px;
+    --font-weight: bold;
+    --font-size: 32px;
+    --border: 3px solid burlywood;
+    --cursor: pointer;
+    --background: white;
+    --transition: background 3s ease, color 1s ease;
 }
 
 #main{
@@ -24,70 +33,55 @@ footer{
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 90%;
+    gap: 15px;
+    width: 70%;
     padding: 10px;
     box-sizing: border-box; 
 }
 
 #show{
-    background: white;
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
-    justify-content:end;
-    padding-right: 5px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 24px;
-    transition: background-color 2s ease, color 1s ease;
+    justify-content: end;
+    padding-right: 15px;
+    font-size: 40px;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight);
+    transition: var(--transition);
 }
 
-#result{
-    width: 100%;
-}
-
-#resultBT{
-    width: 100%;
-    border-radius: 10px;
-    height: 60px;
-    cursor: pointer;
-    background: white;
-    border-color: burlywood;
-    border-width: 3px;
-}
-
-#allButtons{
+#buttonsRow{
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .buttons{
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-    width: 100%;
 }
 
 .button{
-    height: 60px;
-    font-size: 32px;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    background: white;
-    border: 3px solid burlywood;
+    padding: 10px 0;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    cursor: var(--cursor);
+    background: var(--background);
+    border-radius: var(--border-radius);
+    border: var(--border);
+}
+
+#resultBT{
+    width: 100%;
+    padding: 10px 0 10px 0;
 }
 
 #themeBT{
-    border-radius: 10px;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    background: white;
-    border: 3px solid burlywood;
-    transition: background-color 2s ease, color 1s ease;
+    padding: 5px 20px;
+    font-weight: 100;
 }

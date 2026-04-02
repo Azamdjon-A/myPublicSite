@@ -9,7 +9,7 @@
     <body>
         <div id="main">
             <span id="show"></span>
-            <div id="allButtons">
+            <div id="buttonsRow">
                 <div class="buttons">
                     <button class="button" onclick="bt(this.innerText)">7</button>
                     <button class="button" onclick="bt(this.innerText)">8</button>
@@ -34,13 +34,12 @@
                     <button class="button" onclick="bt(this.innerText)">AC</button>
                     <button class="button" onclick="bt(this.innerText)">+</button>
                 </div>
-                <div id="result">
-                    <button id="resultBT" onclick="result()">=</button> 
-                </div>
+                
+                <button class="button" id="resultBT" onclick="result()">=</button> 
             </div>
         </div>
         <footer>
-            <button id="themeBT" onclick="theme()">Сменить тему</button>
+            <button class="button" id="themeBT" onclick="theme()">Сменить тему</button>
         </footer>
         <script src="script.js"></script>
     </body>
