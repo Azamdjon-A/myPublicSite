@@ -106,7 +106,7 @@ function result(){
         }
     }
 
-    text = textIndex[0].toString()
+    text = (Math.round(textIndex[0]*100)/100).toString()
     showText()
     textIndex = []
 }
@@ -121,6 +121,10 @@ function showText(){
             count = 1
             continue;
         }else{
+            if(text[text.length-1-i] === '.') {
+                output = text[text.length-1-i] + output;
+                continue
+            }
             output = text[text.length-1-i] + output;
             if(count % 3 === 0 && i<text.length-1) {output = ' ' + output}
             count++;

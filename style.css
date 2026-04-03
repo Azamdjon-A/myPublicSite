@@ -33,6 +33,7 @@ footer{
     flex-direction: column;
     gap: 15px;
     width: 70%;
+    max-width: 450px;
     padding: 10px;
     box-sizing: border-box; 
 }
