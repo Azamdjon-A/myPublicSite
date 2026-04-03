@@ -6,6 +6,8 @@ let numbers = []
 let inputOperator = []
 const operator = ['*', '/', '+', '-']
 let isWhiteTheme = true
+const maxFontSize = 40;
+const minFontSize = 15;
 
 function theme(){
     if(isWhiteTheme){
@@ -19,6 +21,17 @@ function theme(){
     isWhiteTheme = !isWhiteTheme;
 }
 
+function adjustFontSize(){
+    
+    let currentSize = maxFontSize;
+    display.style.fontSize = currentSize + 'px';
+
+    while(display.scrollWidth > display.clientWidth && currentSize > minFontSize){
+        currentSize--;
+        display.style.fontSize = currentSize +'px';
+    }
+}
+
 function bt(val){
     if(text === '' && operator.includes(val)) return // начало со знака
     if(val === 'AC') {text = ''} // очистка
@@ -28,6 +41,7 @@ function bt(val){
             { text = text.slice(0, -1) + val; }
         else{text += val;}
     } 
+    
     showText()
 }
 
@@ -130,5 +144,7 @@ function showText(){
             count++;
         }
     }
+    
     display.innerText = output
+    adjustFontSize();
 }
